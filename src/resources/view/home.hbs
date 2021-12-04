@@ -1,0 +1,382 @@
+<div id="home">
+    <div id="slider">
+        <video
+            src="https://firebasestorage.googleapis.com/v0/b/avenger-universe.appspot.com/o/tks.mp4?alt=media&token=ce72b396-c624-4f5d-a02f-b9e2b888d797"
+            id="video" autoplay muted></video>
+        <div class="text-content">
+            <h2 class="text-heading">
+                Avengers: Endgame
+            </h2>
+            <div class="text-description">
+                The film was announced in October 2014 as Avengers: Infinity War – Part 2, but Marvel later removed this
+                title. The Russo brothers joined as directors in April 2015, with Markus and McFeely signing on to write
+                the script a month later. The film serves as a conclusion to the story of the MCU up to that point,
+                ending the story arcs for several main characters.
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="origin" class="content-section">
+            <h2 class="section-heading text-white">THE AVENGERS</h2>
+            <p class="section-sub-heading text-white">"What if I told you we were putting a team together?" - Tony Stark
+            </p>
+            <p class="about-text text-white">The Avengers were a team of superheroes assembled by Nick Fury and the
+                intelligence
+                agency
+                S.H.I.E.L.D. through the Avengers Initiative, originally Nick Fury intended it to be called the
+                Protectors
+                Initiative.<br>The original team consisted of Iron Man, Captain America, Hulk, Thor, Black Widow and
+                Hawkeye. They were brought together by S.H.I.E.L.D. to combat Loki, Thor's adoptive brother. The team
+                was
+                initially formed by Nick Fury to "fight the battles that S.H.I.E.L.D. never could".</p>
+            <div class="members-list text-white">
+                <div class="member-item">
+                    <p class="member-name">CAPTAIN AMERICA</p>
+                    <img src="https://trunkey2003.github.io/avenger-nodejs-img/img/TEAM/member1.jpg" alt="PIC"
+                        class="member-img">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">IRON MAN</p>
+                    <img src="https://trunkey2003.github.io/avenger-nodejs-img/img/TEAM/member2.jpg" alt="PIC"
+                        class="member-img">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">THOR</p>
+                    <img src="https://trunkey2003.github.io/avenger-nodejs-img/img/TEAM/member3.jpg" alt="PIC"
+                        class="member-img">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">HULK</p>
+                    <img src="https://trunkey2003.github.io/avenger-nodejs-img/img/TEAM/member4.jpg" alt="PIC"
+                        class="member-img">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">BLACK WIDOW</p>
+                    <img src="https://trunkey2003.github.io/avenger-nodejs-img/img/TEAM/member5.jpg" alt="PIC"
+                        class="member-img">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">HAWKEYE</p>
+                    <img src="https://trunkey2003.github.io/avenger-nodejs-img/img/TEAM/member6.jpg" alt="PIC"
+                        class="member-img">
+                </div>
+            </div>
+        </div>
+
+        <div id="movie" class="tour-section">
+            <div class="content-section">
+                <h2 class="section-heading text-white">MOVIES</h2>
+                <p class="section-sub-heading text-white">BUY TICKET NOW !</p>
+                <ul class="ticket-list">
+                    <li>January <span class="sold-out">SOLD OUT</span></li>
+                    <li>February <span class="sold-out">SOLD OUT</li>
+                    <li>March <span class="sold-out">SOLD OUT</li>
+                    <li>April <span class="sold-out">SOLD OUT</li>
+                    <li>May <span class="sold-out">SOLD OUT</li>
+                    <li>June <span class="sold-out">SOLD OUT</li>
+                    <li>July <span class="sold-out">SOLD OUT</li>
+                    <li>August <span class="sold-out">SOLD OUT</li>
+                    <li>September<span class="sold-out">SOLD OUT</li>
+                    <li>October <span class="quantity">99</li>
+                    <div id="get-date-area">
+                        <button type="button" id="date-button">
+                            GET DATE
+                        </button>
+                        <i id="date"></i>
+                    </div>
+                </ul>
+
+                <div class="movie-list">
+                    {{#each movies}}
+                    <div class="movie-item">
+                        <a href="/movies/{{this.slug}}" class="link">
+                            <img src="https://trunkey2003.github.io/avenger-nodejs-img{{this.movieImg}}" alt=""
+                                class="movie-img">
+                        </a>
+                        <div class="movie-body">
+                            <h3 class="movie-heading">{{this.movieHeading}}</h3>
+                            <p class="movie-time">{{this.movieTime}}</p>
+                            <p class="movie-desc"></p>
+                            <a href="/movies/{{this.slug}}" class="movie-buy-btn">Watch</a>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+
+            </div>
+        </div>
+        <!-- TOUR SECTION -->
+
+        <!-- CONTACT SECTION -->
+        <div id="comment" class="content-section">
+            <div class="content-section">
+                <h2 class="section-heading text-white">COMMENT</h2>
+            </div>
+
+            <div class="comments-content">
+                <div class="comment-user">
+                    <div class="comment-user-left-section">
+                        <img id="comment-img" class="comment-user-avatar"
+                            src="https://trunkey2003.github.io/avenger-nodejs-img/img/TEAM/Superhero Avatars/Avengers/Iron Man-01.png"
+                            alt="" onclick="handleAvatarCommentClick('comment-img')">
+                    </div>
+                    <div class="comment-user-right-section">
+                        <form method="post" action="/comment">
+                            <input id="comment-img" type="text"
+                                value="/img/TEAM/Superhero Avatars/Avengers/Iron Man-01.png" name="avatar"
+                                style="display: none;">
+                            <input class="comment-user-name" type="text" placeholder="your name" name="name"><br>
+                            <select id="select-country-comment" name="location">
+                                {{#each countries}}
+                                <option value="{{this.name}}">{{this.name}}</option>
+                                {{/each}}
+                            </select>
+                            </br>
+                            <div class="comment-user-box">
+                                <textarea id="comment-user-input" name="comment" type="text"
+                                    placeholder="Write something.."></textarea>
+
+                                <div class="comment-user-btn">
+                                    <button type="submit">Reply</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                {{#each comments}}
+                <div class="comment-container">
+                    <div class="comment-section">
+                        <div class="commenter-container">
+                            <img id="commenter-avatar-{{this._id}}"
+                                src="https://trunkey2003.github.io/avenger-nodejs-img{{this.avatar}}"
+                                class="commenter-avatar">
+
+                            <div class="commenter-detail">
+                                <div class="commenter-name-time">{{this.name}} ● {{this.time}}</br></div>
+                                <div class="commenter-country">{{this.location}}</div>
+                                <div class="comment">
+                                    {{this.comment}}
+                                </div>
+                            </div>
+
+                            <div class="more-comment-section">
+                                <div class="ti-more three-dot-btn" id="three-dot-btn-{{_id}}"
+                                    onclick="handleThreeDotCommentBtn('{{_id}}')"></div>
+                                <div id="comment-more-bar-{{_id}}" class="comment-more-bar" style="display: none;">
+                                    <button id="modify-comment-btn-{{_id}}" type="button" class="btn modify-comment-btn"
+                                        data-bs-toggle="modal" data-id="{{_id}}"
+                                        data-bs-target="#modifyCommentModal-{{_id}}">
+                                        Modify
+                                    </button>
+                                    <button id="delete-comment-btn-{{_id}}" type="button" class="btn delete-comment-btn"
+                                        data-bs-toggle="modal" data-id="{{_id}}"
+                                        data-bs-target="#deleteCommentModal-{{_id}}">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="deleteCommentModal-{{_id}}" tabindex="-1"
+                                aria-labelledby="deleteCommentModalLabel" aria-hidden="true" style="direction: ltr;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="deleteModalLabel">Delete Reply</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to delete this reply?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <form name="form-delete-comment-{{_id}}" method="POST"
+                                                action="/deleteComment/{{_id}}?_method=DELETE">
+                                                <input name="commentID" value="{{_id}}" style="display: none;">
+                                                <button type="submit" id="delete-modal-btn-{{_id}}"
+                                                    class="btn btn-danger" data-id="{{_id}}">Delete</button>
+                                                <button type="button" id="close-modal-btn-{{_id}}"
+                                                    class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="modifyCommentModal-{{_id}}" tabindex="-1"
+                                aria-labelledby="modifyCommentModalLabel" aria-hidden="true" style="direction: ltr;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modifyModalLabel">Modify Comment</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to modify this comment?
+                                            <form name="form-modify-comment-{{_id}}" method="POST"
+                                                action="/modifyComment/{{_id}}?_method=PUT">
+                                                <input name="commentID" value="{{_id}}" style="display: none;">
+                                                <input name="name" value="{{this.name}}">
+                                                <input name="location" value="{{this.location}}">
+                                                <textarea name="comment" rows="7">{{this.comment}}</textarea>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" id="modify-modal-btn-{{_id}}" class="btn btn-primary"
+                                                data-id="{{_id}}">Modify</button>
+                                            <button type="button" id="close-modal-btn-{{_id}}" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="task-bar">
+                        <div class="task-bar-left" id="task-bar-left-{{_id}}">
+                            <i class="ti-angle-double-up like-count" style="font-weight:bolder"></i>
+                            <label class="liked" id="liked-{{_id}}">{{this.likes}}</label>
+                        </div>
+
+                        <div class="task-bar-right">
+                            <div id="like-{{_id}}" class="like-btn" onclick="handleLikeBtnClick('{{_id}}')">
+                                Upvote <i class="ti-angle-double-up"></i>
+                            </div>
+                            <div class="reply-btn" onclick="handleReplyBtnClick('reply-{{this._id}}')"><span
+                                    class="count-replies">{{countReplies this.replies}}</span>Reply <i
+                                    class="ti-comments"></i></div>
+                            <div class="share-btn">Share <i class="ti-share"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="reply-section" id="reply-{{this._id}}" style="display : none">
+                        {{#each this.replies}}
+                        <div class="replier-container">
+                            <div class="more-reply-section">
+                                <div class="ti-more three-dot-btn" id="three-dot-btn-{{_id}}"
+                                    onclick="handleThreeDotReplyBtn('{{_id}}')"></div>
+                                <div id="reply-more-bar-{{_id}}" class="reply-more-bar" style="display: none;">
+                                    <button id="modify-reply-btn-{{_id}}" type="button" class="btn modify-reply-btn"
+                                        data-bs-toggle="modal" data-id="{{_id}}"
+                                        data-bs-target="#modifyReplyModal-{{_id}}">
+                                        Modify
+                                    </button>
+                                    <button id="delete-reply-btn-{{_id}}" type="button" class="btn delete-reply-btn"
+                                        data-bs-toggle="modal" data-id="{{_id}}"
+                                        data-bs-target="#deleteReplyModal-{{_id}}">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+
+                            <img id="{{@index}}" src="https://trunkey2003.github.io/avenger-nodejs-img{{this.avatar}}"
+                                class="replier-avatar">
+                            <div class="replier-detail">
+                                <div class="replier-name-time" id="replier-name-time-{{_id}}">{{this.name}} ●
+                                    {{this.time}} </br></div>
+                                <div class="replier-country" id="replier-country-{{_id}}">{{this.location}}</div>
+                                <div class="replier" id="replier-{{_id}}">
+                                    {{this.reply}}
+                                </div>
+                            </div>
+
+
+                            <div class="modal fade" id="deleteReplyModal-{{_id}}" tabindex="-1"
+                                aria-labelledby="deleteReplyModalLabel" aria-hidden="true" style="direction: ltr;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="deleteModalLabel">Delete Reply</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to delete this reply?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <form name="form-delete-reply-{{_id}}" method="POST"
+                                                action="/deleteReply/{{_id}}?_method=DELETE">
+                                                <input name="commentID" value="{{../_id}}" style="display: none;">
+                                                <input name="replyID" value="{{_id}}" style="display: none;">
+                                                <button type="submit" id="delete-modal-btn-{{_id}}"
+                                                    class="btn btn-danger" data-id="{{_id}}">Delete</button>
+                                                <button type="button" id="close-modal-btn-{{_id}}"
+                                                    class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="modifyReplyModal-{{_id}}" tabindex="-1"
+                                aria-labelledby="modifyReplyModalLabel" aria-hidden="true" style="direction: ltr;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modifyModalLabel">Modify Reply</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to modify this reply?
+                                            <form name="form-modify-reply-{{_id}}" method="POST"
+                                                action="/modifyReply/{{_id}}?_method=PUT">
+                                                <input name="commentID" value="{{../_id}}" style="display: none;">
+                                                <input name="replyIndex" value={{@index}} style="display: none;">
+                                                <input name="name" value="{{this.name}}">
+                                                <input name="location" value="{{this.location}}">
+                                                <textarea name="reply" rows="7">{{this.reply}}</textarea>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" id="modify-modal-btn-{{_id}}" class="btn btn-primary"
+                                                data-id="{{_id}}">Modify</button>
+                                            <button type="button" id="close-modal-btn-{{_id}}" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+
+                    <div class="reply-user">
+                        <div class="reply-user-left-section">
+                            <img id="avatar-reply-{{_id}}" class="reply-user-avatar"
+                                src="https://trunkey2003.github.io/avenger-nodejs-img/img/TEAM/Superhero Avatars/Avengers/Iron Man-01.png"
+                                alt="" onclick="handleAvatarReplyClick('{{_id}}')">
+                        </div>
+                        <div class="reply-user-right-section">
+                            <form method="post" action="/reply?_method=PUT">
+                                <input class="replier-id" type="text" value="{{_id}}" style="display: none;" name="id">
+                                <input class="replier-img" id="replier-avatar-{{_id}}" type="text"
+                                    value="/img/TEAM/Superhero Avatars/Avengers/Iron Man-01.png" name="avatar">
+                                <input class="replier-user-name" type="text" placeholder="your name" name="name"><br>
+                                <select id="select-country-reply" name="location">
+                                    {{#each ../countries}}
+                                    <option value="{{this.name}}">{{this.name}}</option>
+                                    {{/each}}
+                                </select>
+                                </br>
+                                <div class="reply-user-box">
+                                    <textarea id="reply-user-input" name="reply" type="text"
+                                        placeholder="Write something.."></textarea>
+
+                                    <div class="reply-user-btn">
+                                        <button type="submit">Reply</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

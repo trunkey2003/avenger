@@ -1,0 +1,28 @@
+<div class="movies-content">
+
+    <div class="movie-path">
+        <a class="movies-first-path">
+            MOVIES/
+        </a>
+        <a class="movies-second-path">{{movie.movieHeading}}</a>
+    </div>
+
+    <div class="movie-des-container">
+        <div class="movie-des-img">
+            <img src="https://trunkey2003.github.io/avenger-nodejs-img{{movie.movieImg}}" alt="{{this.movieHeading}}">
+        </div>
+        <div class="movie-des">
+            <div class="movie-des-title"><h1>{{movie.movieHeading}}</h1></div>
+            <div class="movie-des-subtitle"><h3>{{movie.movieTime}}</h3></div>
+            <div class="movie-des-subtitle">
+                <h4>Director : {{movie.movieDirector}}</h4>
+                <h4>Stars : {{movie.movieStars}} </h4>
+            </div>
+            <div class="movie-des-des">{{movie.movieDes}}</div>
+        </div>
+    </div>
+
+    <div class="movie-iframe">
+        <iframe src="https://www.youtube.com/embed/{{movie.movieLink}}/?rel=0&amp;vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>

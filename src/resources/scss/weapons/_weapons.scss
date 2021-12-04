@@ -1,0 +1,69 @@
+#weapon {
+  display: inline-block;
+  width: 100%;
+}
+
+#ad1-weapon {
+  float: left;
+  width: 7%;
+  min-height: 50vh;
+  background-color: black;
+}
+
+#weapon-content {
+  display: inline-block;
+  width: 70%;
+  min-height: 30vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: black;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  padding-top: 10vh;
+}
+
+#ad2-weapon {
+  float: right;
+  width: 7%;
+  min-height: 50vh;
+  background-color: black;
+}
+
+#weapon-content-title {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#weapon-content-subtitle {
+  color: rgb(173, 169, 169);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+.weapon-items {
+  float: left;
+  min-height: 40px;
+  width: 20%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  height: calc(70vw * 25 / 100);
+  border-radius: 10%;
+}
+
+.weapon-img {
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border: rgb(0, 0, 0) solid 3px;
+  width: 100%;
+}
+
+.weapon-img:hover {
+  border: rgb(255, 231, 231) solid 3px;
+}
+
+.weapon-name {
+  font-size: 20px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}

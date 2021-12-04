@@ -1,0 +1,323 @@
+.tour-section {
+  background-image: url("https://trunkey2003.github.io/img/background.jpg");
+  background-repeat: repeat;
+}
+
+.ticket-list {
+  background-color: #fff;
+  margin-top: 3rem;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.ticket-list li:hover {
+  background-color: #701e1e;
+  color: white;
+}
+
+.ticket-list li {
+  font-size: 2.2vh;
+  padding: 1vw 1vh;
+  border-bottom: 0.1vh solid #ccc;
+  list-style-type: none;
+  color: black;
+}
+
+.ticket-list .sold-out {
+  background-color: #d41212;
+  color: white;
+  font-size: 1.5vh;
+}
+
+.ticket-list .quantity {
+  float: right;
+  background-color: #771515;
+  color: white;
+  font-size: 13px;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+#get-date-area {
+  padding: 1vw 0;
+}
+
+#date-button {
+  background-color: #771515;
+  color: #fff;
+  border: none;
+  padding: 1px 2px;
+  margin-left: 1vw;
+}
+
+#date-button:hover {
+  cursor: pointer;
+}
+
+#date {
+  color: #000;
+}
+
+.movie-list {
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-item:hover {
+  border: white solid 3px;
+}
+
+.movie-item img {
+  display: block;
+  width: 100%;
+  background-color: black;
+  margin: auto;
+}
+
+@media (min-width: 1024px) {
+  .movie-item {
+    width: calc(30% - 6px);
+    margin-left: calc(10% / 6);
+    margin-right: calc(10% / 6);
+    margin-top: 5%;
+    border: black solid 3px;
+    /* background-color: #fff; */
+    overflow: hidden;
+  }
+  .movie-buy-btn {
+    color: #fff;
+    display: inline-block;
+    margin-top: 1.5vw;
+    padding: 0.5vw 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #d41212;
+  }
+  .movie-body {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.333);
+    color: rgb(255, 255, 255);
+  }
+  .movie-heading {
+    min-height: 50px;
+    line-height: 25px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .movie-time {
+    margin-top: 5px;
+  }
+
+  .form-section input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #left-section {
+    width: 30%;
+    float: left;
+    overflow: hidden;
+  }
+  #right-section {
+    width: 70%;
+    float: right;
+  }
+  #left-section img {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    /* margin:auto; */
+  }
+  #submit {
+    background-color: #660d0d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 92%;
+  }
+  #change-btn {
+    text-align: center;
+  }
+  #change-btn i {
+    margin-left: 18%;
+    margin-right: 18%;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 1023.9px) {
+  .movie-item {
+    width: 30%;
+    margin-left: calc(10% / 6);
+    margin-right: calc(10% / 6);
+    margin-top: 5%;
+    /* background-color: #fff; */
+    overflow: hidden;
+  }
+  .movie-buy-btn {
+    color: #fff;
+    display: inline-block;
+    margin-top: 1.5vw;
+    padding: 0.5vw 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #d41212;
+  }
+  .movie-body {
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.333);
+    color: #fff;
+  }
+  .movie-heading {
+    min-height: 3vw;
+    max-height: 3vw;
+    font-size: 15px;
+  }
+  .form-section input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #left-section {
+    width: 50%;
+    float: left;
+  }
+  #right-section {
+    width: 50%;
+    float: right;
+  }
+  #left-section img {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15%;
+    /* margin:auto; */
+  }
+  #submit {
+    background-color: #660d0d;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 88%;
+  }
+  #change-btn {
+    text-align: center;
+  }
+  #change-btn i {
+    margin-left: 18%;
+    margin-right: 18%;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 549.9px) {
+  .movie-item {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    /* background-color: #fff; */
+    overflow: hidden;
+  }
+  .movie-buy-btn {
+    color: #fff;
+    display: inline-block;
+    margin-top: 2vh;
+    padding: 1vh 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #d41212;
+  }
+  .movie-body {
+    font-size: 2vh;
+    background-color: rgba(255, 255, 255, 0.333);
+    color: #fff;
+  }
+  .movie-heading {
+    min-height: 3vh;
+    max-height: 6vh;
+  }
+  .movie-time {
+    margin-top: 5px;
+  }
+  .form-section input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #left-section {
+    width: 50%;
+    min-height: 70%;
+    float: left;
+  }
+  #right-section {
+    width: 50%;
+    min-height: 70%;
+    float: right;
+  }
+  #left-section img {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    /* margin:auto; */
+  }
+  #submit {
+    background-color: #5c0d0d;
+    color: white;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 75%;
+  }
+  #change-btn {
+    text-align: center;
+  }
+  #change-btn i {
+    margin-left: 18%;
+    margin-right: 18%;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

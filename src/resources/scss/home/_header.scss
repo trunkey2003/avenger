@@ -1,0 +1,347 @@
+:root{
+  --background-header:linear-gradient(90deg, rgb(0, 0, 0) 70%, rgb(83, 21, 21) 100%);
+
+}
+#nav #sub-nav li:hover a,
+#nav > li:hover > a{
+  animation: navHover 0.2s ease-in;
+  cursor: pointer;
+  background-color: #9b0f0f;
+}
+
+
+#logo {
+  float: left;
+  display: block;
+  margin-right: 2vw;
+}
+
+#logo:hover {
+  cursor: pointer;
+  animation: logoHover 0.1s ease-in;
+}
+
+#more-button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .sign-up-sign-in-section:hover{
+    cursor: pointer;
+    animation: navHover2 0.2s ease-in;
+    background-color: white!important;
+  }
+
+  #header {
+    // display: flex;
+    height: var(--header-height-pc);
+    width: 100%;
+    background-color: #000000;
+    background: var(--background-header);
+    position: fixed;
+    top: 0;
+  }
+  #hamburger-btn {
+    display: none;
+  }
+
+  #nav {
+    display: inline-block;
+    /* margin-left: 2vw; */
+  }
+  #nav li {
+    display: block;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    position: relative;
+  }
+  #nav > li {
+    display: inline-block;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 13px;
+    position: relative;
+  }
+  #nav > li > a {
+    color: white;
+    text-transform: uppercase;
+  }
+  #nav li a {
+    text-decoration: none;
+    line-height: var(--header-height-pc);
+    padding: 0 1.1vw;
+    display: block;
+    font-size: 15px;
+  }
+  #nav #sub-nav a {
+    color: #ffffff;
+    font-size: 16px;
+    width: 5vw;
+  }
+  #arrow-down {
+    font-size: 2vh;
+    margin-left: 1vw;
+  }
+  #logo img {
+    height: var(--header-height-pc);
+  }
+
+  .unactive{
+    animation: unactiveMoreButton 0.5s ease-in-out;
+    visibility: hidden;
+  }
+
+  .hidden{
+    visibility: hidden;
+  }
+
+  #sub-nav {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: black;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
+  }
+  #header form {
+    float: left;
+    margin-right: 5vw;
+    height: 90%;
+  }
+  #header input[type="text"] {
+    height: 100%;
+    width: 500px;
+    font-size: 17px;
+    border: none;
+  }
+  #header form button {
+    float: right;
+    height: 100%;
+    border: 1px solid white;
+    width: calc(var(--header-height-pc) * (60 / 100) * 2);
+    background: #750404;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #header form button:hover {
+    background: #993838;
+  }
+
+  .mgl-2{
+    margin-left: 20vw;
+  }
+
+}
+
+@media (min-width: 640px) and (max-width: 1023.9px) {
+  .sign-up-sign-in-section{
+    display: none!important;
+  }
+
+  #more-button{
+    display: none!important;
+  }
+
+  #header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 36px;
+    width: 100%;
+    max-width: 100vw;
+    background-color: #000000;
+    background: var(--background-header);
+    position: fixed;
+    top: 0;
+  }
+
+  #hamburger-btn {
+    color: white;
+    line-height: 35px;
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+  }
+
+  #nav {
+    display: none;
+  }
+  #nav li {
+    display: block;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    position: relative;
+  }
+  #nav li a {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  #more-button {
+    display: none;
+  }
+
+  #nav li a {
+    text-decoration: none;
+    width: calc(100vw / 7);
+    padding: 2px 0;
+    background-color: rgba($color: #000000, $alpha: 1);
+    display: block;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  #sub-nav {
+    display: flex;
+  }
+  /* NEED PREVENTING ANCHOR */
+  #nav #sub-nav a {
+    color: #ffffff;
+    font-size: 2vw;
+    text-transform: uppercase;
+  }
+
+  #arrow-down {
+    font-size: 2vh;
+    margin-left: 1vw;
+  }
+
+  #logo img {
+    height: calc(var(--header-height-tablet));
+  }
+  #header form {
+    float: left;
+    margin-right: 5vw;
+    margin-top: 0;
+    height: 80%;
+  }
+  #header input[type="text"] {
+    height: 100%;
+    width: 500px;
+    font-size: 17px;
+    border: none;
+  }
+  #header form button {
+    float: right;
+    height: 100%;
+    border: 1px solid white;
+    width: calc(var(--header-height-pc) * (60 / 100) * 2);
+    background: #750404;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #header form button:hover {
+    background: #993838;
+  }
+}
+
+@media (max-width: 639.9px) {
+  .sign-up-sign-in-section{
+    display: none;
+  }
+
+  #more-button{
+    display: none!important;
+  }
+
+  #header {
+    display: flex;
+    flex-wrap: wrap;
+    height: var(--header-height-tablet);
+    width: 100%;
+    max-width: 100vw;
+    background-color: #0a0a0a;
+    background: var(--background-header);
+    position: fixed;
+    top: 0;
+  }
+
+  #hamburger-btn {
+    color: white;
+    line-height: 35px;
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+  }
+
+  #nav {
+    display: none;
+    background-color: black;
+    height: 20px;
+  }
+  #nav li {
+    display: block;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    position: relative;
+  }
+  #nav li a {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  #more-button {
+    display: none;
+  }
+
+  #nav li a {
+    text-decoration: none;
+    width: calc(101vw / 7);
+    height: 20px;
+    background-color:black;
+    display: block;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  #sub-nav {
+    display: flex;
+  }
+  /* NEED PREVENTING ANCHOR */
+  #nav #sub-nav a {
+    color: #ffffff;
+    font-size: 10px;
+    background-color: black;
+    height: 20px;
+    text-transform: uppercase;
+  }
+
+  #arrow-down {
+    font-size: 2vh;
+    margin-left: 1vw;
+  }
+
+  #logo img {
+    height: calc(var(--header-height-tablet));
+  }
+  #header form {
+    float: left;
+    margin-right: 5vw;
+    margin-top: 0;
+    height: 80%;
+  }
+  #header input[type="text"] {
+    height: 100%;
+    width: 200px;
+    font-size: 17px;
+    border: none;
+  }
+  #header form button {
+    float: right;
+    height: 100%;
+    border: 1px solid white;
+    width: calc(var(--header-height-pc) * (60 / 100) * 2);
+    background: #750404;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #header form button:hover {
+    background: #993838;
+  }
+}
+
+.active {
+  animation : activeMoreButton 0.5s ease-in-out;
+  visibility: visible;
+}

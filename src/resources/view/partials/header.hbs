@@ -1,0 +1,76 @@
+<div id="header" style="z-index: 2">
+  <div id="logo">
+    <a href="/">
+      <img src="https://i.pinimg.com/originals/d2/b6/d9/d2b6d9f420dd981e2387d7843e75feca.png" alt="PIC" />
+    </a>
+  </div>
+  <form method="post" action="search">
+    <input type="text" placeholder="Search.." name="search" />
+    <button type="submit"><i class="ti-search"></i></button>
+  </form>
+  <span class="ti-align-justify" id="hamburger-btn" onclick="handleHamburgerBtn()"></span>
+  <ul id="nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/#origin">Origin</a></li>
+    <li><a href="/#movie">Movies</a></li>
+    <li><a href="/#comment ">Comment</a></li>
+    <li>
+      <a id="more-button">
+        More
+        <ul id="sub-nav" class="hidden">
+          <li><a href="/weapons">Weapon</a></li>
+          <li><a href="">Actors</a></li>
+          <li><a href="">Credits</a></li>
+        </ul>
+      </a>
+    </li>
+
+    <li class="mgl-2 sign-up-sign-in-section">
+      <a type="button" data-bs-toggle="modal" data-bs-target="#signUpModal">
+        Sign up
+      </a>
+    </li>
+
+    <li class="sign-up-sign-in-section">
+      <a type="button" data-bs-toggle="modal" data-bs-target="#signInModal">
+        Sign in
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Chức năng sign up/sign in đang được tạo và chưa làm xong nên chưa được push lên <br> Cám ơn bạn đã đọc đến đây @_@ 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Chức năng sign up/sign in đang được tạo và chưa làm xong nên chưa được push lên <br> Cám ơn bạn đã đọc đến đây @_@ 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+@keyframes navHover {
+    from { background-color: white; }
+      to { background-color: #9b0f0f;}
+  }
+
+@keyframes navHover2 {
+    from { background-color: rgb(0, 0, 0); }
+      to { background-color: #f7f7f7;}
+}
+
+@keyframes logoHover{
+    from {height : 35px;}
+    to {height : 40px;}
+}
+
+@keyframes activeMoreButton {
+    from {visibility: hidden; opacity: 0;}
+    to {visibility: visible; opacity: 1;}
+}
+
+@keyframes unactiveMoreButton {
+    from {visibility: visible; opacity: 1;}
+    to {visibility: hidden; opacity: 0;}
+}

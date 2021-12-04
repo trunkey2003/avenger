@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+}
+
+.custom-modal-content{
+  background-color: black;
+  color: white;
+}
+
+.custom-modal-content{
+  margin-top:30vh;
+}
+
+a:hover{
+  color: #fff;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://trunkey2003.github.io/img/background.jpg");
+  background-repeat: repeat;
+  max-width: 100vw !important;
+}
+
+
+#header {
+  display: inline-block;
+}
+
+:root {
+  --header-height-pc: 35px;
+  --header-height-tablet: 35px;
+  --header-height-mobile: 35px;
+}
+
+ul{
+  padding-left: 0;
+}
+
+#video{
+  max-width: 100%;
+}
+
+#home{
+  margin-top: 35px;
+}

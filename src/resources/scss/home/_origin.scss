@@ -1,0 +1,95 @@
+#origin .section-sub-heading {
+  font-size: 1 rem;
+  margin: 2vh 0 2vh 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.members-list {
+  margin-top: 5vh;
+}
+
+#origin .member-item img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#origin .about-text {
+  line-height: 4vh;
+  text-align: center;
+  font-size: 2.5vh;
+}
+
+@media (min-width: 1024px) {
+  .members-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #content .member-item {
+    width: calc(100% / 3);
+  }
+  #content .member-item img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* border: 2px solid #ccc; */
+  }
+  #content .content-section .member-name {
+    margin: 0 0 2vh 0;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 1023.9px) {
+  .members-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #content .member-item {
+    width: calc(100% / 2);
+  }
+  #content .member-item img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* border: 2px solid #ccc; */
+  }
+  #content .content-section .member-name {
+    margin: 0 0 2vh 0;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}
+
+@media (max-width: 549.9px) {
+  #content .content-section{
+    padding-top: 3vh;
+  }
+  #content .member-item {
+    margin-top: 10vh;
+    display: inline-block;
+    width: 100%;
+    font-size: 4vh;
+  }
+  #content .member-item img {
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    border: 2px solid #ccc;
+  }
+  #content .content-section .member-name {
+    margin: 0 0 2vh 0;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}

@@ -1,0 +1,30 @@
+// Init start
+@import './home/variables';
+@import './home/animation';
+@import './home/home';
+// Init end
+
+// Header start 
+@import './home/header';
+// Header end
+
+// Home site start
+@import './home/slider';
+@import './home/content';
+@import './home/origin';
+@import './home/movies';
+@import './home/comments';
+// Home site end
+
+// Weapon site start
+@import './weapons/weapon-movies';
+@import './weapons/weapons';
+// Weapon site end
+
+// Movie site start
+@import './movies/movies';
+// Movie site end
+
+// Footer start
+@import './home/footer';
+// Footer end

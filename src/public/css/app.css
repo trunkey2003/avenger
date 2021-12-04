@@ -94,7 +94,7 @@ ul {
 #more-button:hover {
   cursor: pointer; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .sign-up-sign-in-section:hover {
     cursor: pointer;
     animation: navHover2 0.2s ease-in;
@@ -172,7 +172,7 @@ ul {
   .mgl-2 {
     margin-left: 20vw; } }
 
-@media (min-width: 640px) and (max-width: 1023.9px) {
+@media (min-width: 640px) and (max-width: 1024.9px) {
   .sign-up-sign-in-section {
     display: none !important; }
   #more-button {
